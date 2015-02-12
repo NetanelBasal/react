@@ -1,30 +1,42 @@
 {
-  "name": "react-tutorial",
+  "name": "react",
   "version": "0.0.0",
-  "description": "Code from the React tutorial.",
+  "description": "React",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "^1.4.3",
-    "express": "^4.4.5"
+    "react": "^0.12.2",
+    "react-router": "^0.11.6",
+    "jquery": "latest"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "6to5ify": "^4.1.0",
+    "browserify": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-copy": "0.0.2",
+    "gulp-if": "^1.2.5",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-inject": "^1.1.1",
+    "gulp-minify-css": "^0.4.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-ruby-sass": "^1.0.0-alpha.3",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-usemin": "^0.3.11",
+    "gulp-util": "^3.0.3",
+    "gulp-watch": "^4.1.1",
+    "require-dir": "^0.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "wiredep": "^2.2.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/reactjs/react-tutorial.git"
-  },
-  "keywords": [
-    "react",
-    "tutorial",
-    "comment",
-    "example"
-  ],
-  "author": "petehunt",
-  "bugs": {
-    "url": "https://github.com/reactjs/react-tutorial/issues"
-  },
-  "homepage": "https://github.com/reactjs/react-tutorial"
+  "author": "NetanelBasal",
+  "homepage": ""
 }
