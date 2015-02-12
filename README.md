@@ -6,4 +6,4 @@ react-starter with gulp es6 and sass
 ```javascript
 npm install
 bower install
-
+gulp dev or gulp build
