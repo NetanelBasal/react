@@ -10,7 +10,7 @@ requireDir('./tasks', {
 
 
 gulp.task('dev', function(cb) {
-  runSequence('bower', 'js', 'sass', 'connect', 'watch', cb);
+  runSequence('js', 'sass', 'connect', 'watch', cb);
 });
 
 gulp.task('build', function(cb) {
