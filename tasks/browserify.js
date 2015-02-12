@@ -6,6 +6,7 @@ var connect = require('gulp-connect');
 var browserify = require('browserify');
 var uglify = require('gulp-uglify');
 var plumber = require('gulp-plumber');
+var buffer = require('vinyl-buffer');
 var notify = require("gulp-notify");
 var gulpif = require('gulp-if');
 var to5ify = require('6to5ify');
@@ -34,6 +35,7 @@ gulp.task('js', function() {
     }))
     .pipe(gulpif(config.build, uglify()))
     .pipe(source(config.js.mainFileName))
+    .pipe(buffer())
     .pipe(gulp.dest(config.js.dist))
     .pipe(notify("Js Finished!"))
     .pipe(connect.reload());

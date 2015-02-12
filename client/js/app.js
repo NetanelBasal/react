@@ -1,19 +1,18 @@
-var React = require('react');
-var Router = require('react-router');
-var RouteHandler = Router.RouteHandler;
-var Nav = require('./components/Nav/Nav');
+import React from 'react';
+import Router from 'react-router';
+import Nav from './components/Nav/Nav';
+
+let RouteHandler = Router.RouteHandler;
 
 var App = React.createClass({
-      render() {
+  render() {
     return (
-      < div >
-
-        < Nav / >
-
-        < RouteHandler / >
-      < /div>
+      <div>
+        < Nav />
+        < RouteHandler />
+      </div>
     );
   }
 });
 
-module.exports = App;
+export default App;

@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 
 var Post = React.createClass({
   render: function() {
@@ -11,4 +11,4 @@ var Post = React.createClass({
   }
 });
 
-module.exports = Post;
+export default Post;

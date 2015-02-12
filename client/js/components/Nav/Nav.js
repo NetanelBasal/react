@@ -1,20 +1,21 @@
-var React = require('react');
-var Router = require('react-router');
-var Link = Router.Link;
+import React from 'react';
+import Router from 'react-router';
 
-var Nav = React.createClass({
-      render() {
-        return (
-            < header className = "main-nav" >
-            < ul >
-            < li >
-            < Link to="Home" > Home < /Link>
-            <Link to="Posts">Posts</Link >
-            < /li>
-        </ul >
-            < /header>
+let Link = Router.Link;
+
+const Nav = React.createClass({
+  render() {
+    return (
+      <header className = "main-nav" >
+        <ul>
+          <li>
+            <Link to="Home">Home </Link>
+            <Link to="Posts">Posts</Link>
+          </li>
+        </ul>
+      </header>
     );
   }
-
 });
-module.exports = Nav;
+
+export default Nav;

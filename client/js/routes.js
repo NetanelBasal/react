@@ -1,19 +1,20 @@
-var React = require('react');
-var Router = require('react-router');
+import React from 'react';
+import Router from 'react-router';
+import App from './App';
+import TodoList from './components/Todo/Todo';
+import Home from './components/Home/Home';
+import Posts from './components/Posts/Posts';
 
-var Route = Router.Route;
-var DefaultRoute = Router.DefaultRoute;
+let Route = Router.Route;
+let DefaultRoute = Router.DefaultRoute;
 
-var App = require('./App');
-var Home = require('./components/Home/Home');
-var Posts = require('./components/Posts/Posts');
-
-var routes = (
+const routes = (
   <Route handler={App} path="/">
     <DefaultRoute handler={Home}/>
     <Route name="Home" handler={Home} />
     <Route name="Posts" handler={Posts} />
+    <Route name="Todos" handler={TodoList} />
   </Route>
 );
 
-module.exports = routes;
+export default routes;
