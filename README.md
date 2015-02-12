@@ -1,8 +1,8 @@
 # react
 react-starter with gulp es6 and sass
 
-#get started
+##get started
 ```sh
-run npm install
-run bower install
-...
+npm install
+bower install
+
