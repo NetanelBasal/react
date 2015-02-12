@@ -4,7 +4,7 @@ import Nav from './components/Nav/Nav';
 
 let RouteHandler = Router.RouteHandler;
 
-var App = React.createClass({
+const App = React.createClass({
   render() {
     return (
       <div>
