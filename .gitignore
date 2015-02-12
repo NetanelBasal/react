@@ -1,6 +1,5 @@
 *~
 node_modules
-vendor
 .DS_Store
 .sass-cache
 .idea
